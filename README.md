@@ -79,10 +79,11 @@ As **vagas, empresas, cursos, mentores e publicações do feed são fictícios**
 
 ## Equipe
 
-- [Nome do Estudante 1]
-- [Nome do Estudante 2]
-- [Nome do Professor Orientador]
+- Matheus Morais Matsdorf
+- Pedro Henrique Saretto
+- Gustavo Rocha Hassdenteufel
+- Jeferson Tigik da Silva
 
 ## Licença
 
-Projeto educacional. Defina a licença antes de publicar (por exemplo, MIT).
+Projeto educacional.
