@@ -33,7 +33,7 @@ Não precisa instalar nada.
 
 1. Baixe ou clone o repositório:
    ```bash
-   git clone https://github.com/SEU-USUARIO/elo.git
+   git clone https://github.com/MatheusMatsdorf/elo.git
    ```
 2. Abra o arquivo `index.html` no navegador.
 
