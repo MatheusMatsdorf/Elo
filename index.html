@@ -4,10 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Elo – Rede de oportunidades</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><div class="bar"><div class="logo" role="link" tabindex="0" title="Ir para o início" style="cursor:pointer" onclick="go('inicio')" onkeydown="if(event.key=='Enter')go('inicio')">elo<span>.</span></div>
+<div id="aviso" style="padding:24px;font-family:system-ui,sans-serif;line-height:1.5">Carregando o Elo…<br><small>Se esta mensagem não sumir, o arquivo <b>script.js</b> (ou <b>style.css</b>) não foi encontrado. Mantenha <b>index.html</b>, <b>style.css</b> e <b>script.js</b> juntos na mesma pasta, com esses nomes exatos, e abra o <b>index.html</b> dessa pasta.</small></div>
+<noscript><p style="padding:24px;font-family:system-ui,sans-serif">O Elo precisa de JavaScript ativado para funcionar.</p></noscript>
+<header><div class="bar"><a class="logo" href="#" onclick="go('inicio');return false" aria-label="Elo, ir para a página inicial">elo<span>.</span></a>
 <nav id="nav"></nav></div></header>
 <main><aside class="sb" id="side"></aside><section id="view"></section></main>
 <div class="toast" id="toast"></div>
