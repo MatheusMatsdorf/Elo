@@ -208,5 +208,9 @@ function save(){if(S.rst||!S.li)return;try{localStorage.setItem(KEY,JSON.stringi
 function reset(){S.rst=1;try{localStorage.removeItem(KEY)}catch(e){}location.reload()}
 S.prog={};S.tgt=null;S.reqs=[];S.mreqs=[];S.g=ng();S.f=nf();S.cv={lay:"classico",tel:"",email:"",obj:S.me.bio,exp:"",edu:""};S.li=false;S.u="";S.am="login";try{const se=localStorage.getItem(SK);if(se==="guest")S.li=true;else if(se&&users()[se]){S.li=true;S.u=se;KEY="elo-u-"+se}if(S.li)Object.assign(S,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
 addEventListener("pagehide",save);
+let TH="light";try{TH=localStorage.getItem("elo-theme")==="dark"?"dark":"light"}catch(e){}
+function aplicaTema(){document.documentElement.dataset.theme=TH;const b=$("#th"),t=TH=="dark"?"Mudar para o tema claro":"Mudar para o tema escuro";b.title=t;b.setAttribute("aria-label",t)}
+function tema(){TH=TH=="dark"?"light":"dark";try{localStorage.setItem("elo-theme",TH)}catch(e){}aplicaTema()}
+aplicaTema();
 $("#aviso").remove();
 render();
